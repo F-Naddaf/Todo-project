@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: black;
+}
+
+.intro {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 5px solid #e94f4f;
+  box-shadow: 5px 5px 50px #e94f4f;
+  justify-content: space-around;
+  border-radius: 30px;
+}
+
+.intro-massage {
+  color: black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#enter-btn {
+  padding: 5px;
+  font-size: 20px;
+  width: 120px;
+  height: 40px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #e94f4f;
+}
+
+#enter-btn:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
