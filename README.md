@@ -1,4 +1,4 @@
-# Todo app
+# ToDo app
 
 ## 1. Description
 
@@ -12,7 +12,7 @@ This app help you organizing your work schedule.</br>
 ## 2. Link and Preview
 
 ![App view](./public/Capture.JPG)
-Project link is available at [Expense Tracker App](https://f-naddaf.github.io/Side-Project)
+Project link is available at [ToDo App](https://f-naddaf.github.io/Todo-project)
 
 ## 3. App Folder Structure
 
