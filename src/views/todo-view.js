@@ -31,10 +31,34 @@ export const toDoStructure = () => {
   <fieldset id="show-field">
     <legend class="todo-list"> Your TO<span class="do-color">DO</span> List </legend>
     <table id="my-list">
-      <tr id="list">
+      <tr class="list">
         <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
         <td>McDonald's</td>
-        <td>Friday I have to meet my Friends in McDonald's at 10:30am</td>
+        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
+        <td>10-08-2022</td>
+      </tr>
+      <tr class="list">
+        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
+        <td>McDonald's</td>
+        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
+        <td>10-08-2022</td>
+      </tr>
+      <tr class="list">
+        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
+        <td>McDonald's</td>
+        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
+        <td>10-08-2022</td>
+      </tr>
+      <tr class="list">
+        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
+        <td>McDonald's</td>
+        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
+        <td>10-08-2022</td>
+      </tr>
+      <tr class="list">
+        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
+        <td>McDonald's</td>
+        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
         <td>10-08-2022</td>
       </tr>
     </table>
