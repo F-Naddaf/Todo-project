@@ -186,15 +186,25 @@ textarea {
 
 .todo-list {
   color: white;
-  margin: 20px;
+  margin: 0 auto 0 30px;
   padding: 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #my-list {
   display: flex;
   flex-direction: column;
-  margin: 5px 0 30px 0;
+  margin: 5px 15px 20px 15px;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 120, 120, 0.3);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(31, 31, 31);
 }
 
 .do-color {
@@ -205,7 +215,8 @@ td {
   color: white;
   text-align: center;
   font-size: 15px;
-  padding: 5px 25px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
 }
 
 #checkbox {
@@ -213,7 +224,6 @@ td {
   width: 15px;
 }
 
-#checkbox:hover {
-  background-color: red;
-  color: #800d0d;
+input[type='checkbox']:checked {
+  accent-color: #e94f4f;
 }
