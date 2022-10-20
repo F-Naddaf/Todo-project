@@ -4,65 +4,79 @@ export const toDoStructure = () => {
   const element = document.createElement('div');
   element.classList.add('structure');
   element.innerHTML = `
-  <fieldset id="input-field">
-  <legend>
-  <div class="logo-background">
-    <img id="logo" src = './public/Image/Todo-logo.png' alt="ToDo" height="40px"/>
-  </div>
-    </legend>  
-      <form id="todo-form">
-        <div class="top-field">
-          <div id="title-section">
-            <label class="label-name">Title:</label>
-            <input type="text" class="small-input-field" id="input-title" placeholder="Add a title">
-          </div>
-          <div id="date-section">
-            <label class="label-name">Date:</label>
-            <input type="date" class="small-input-field" id="input-date" class="input-2" placeholder="dd/mm/yy"/>
+  <section class="greeting">
+    <h2 class="title">
+      What's up, <input type="text" id="name" placeholder="Name here" />
+      <img id="welcome-logo" src = './public/Image/Todo-logo-1.png' alt="ToDo" height="40px"/>
+    </h2>
+		</section>
+    <section class="create-todo">
+			<h3>CREATE A TODO</h3>
+			<form id="new-todo-form">
+				<h4>What's on your todo?</h4>
+        <div class="input-container">
+        <div class="title-input">
+          <input 
+            type="text" 
+            placeholder="Title: e.g. Shopping"
+            name="title"
+            id="content" 
+            required/>
+            </div>
+            <div class="date-input">
+          <input 
+            type="text" 
+            placeholder="Date: e.g. 12-12-2022"
+            name="date"
+            id="content" 
+            required/>
           </div>
         </div>
-        <div class="bottom-field">
-          <label class="label-name">Description:</label>
-          <textarea type="text" class="input-field" id="input-desc" placeholder="Enter your description" maxlength="200"></textarea>
-        </div>  
-        <button id="submit-btn">Add</button> 
-      </form>
-  </fieldset>
-  <fieldset id="show-field">
-    <legend class="todo-list"> Your TO<span class="do-color">DO</span> List </legend>
-    <table id="my-list">
-      <tr class="list">
-        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
-        <td>McDonald's</td>
-        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
-        <td>10-08-2022</td>
-      </tr>
-      <tr class="list">
-        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
-        <td>McDonald's</td>
-        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
-        <td>10-08-2022</td>
-      </tr>
-      <tr class="list">
-        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
-        <td>McDonald's</td>
-        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
-        <td>10-08-2022</td>
-      </tr>
-      <tr class="list">
-        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
-        <td>McDonald's</td>
-        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
-        <td>10-08-2022</td>
-      </tr>
-      <tr class="list">
-        <td><input id="checkbox" type="checkbox" name="todo" value="todo"></td>
-        <td>McDonald's</td>
-        <td>Friday I have to meet my Friends in McDonald's s s  ssaasasa asdqwwas asdwdwdas asdqwdasdawdw at 10:30am</td>
-        <td>10-08-2022</td>
-      </tr>
-    </table>
-  </fieldset>
+      <input 
+        type="text" 
+        placeholder="Description: e.g. Get some milk"
+        name="desc"
+        class="desc"
+        id="content" 
+        required/>
+				
+				<h4>Pick a category</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" /> 
+						<span class="bubble business"></span>
+						<div>Business</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+				</div>
+				<input type="submit" value="Add todo" />
+			</form>
+		</section>
+    <section class="todo-list">
+			<h3>TODO LIST</h3>
+			  <div class="list" id="todo-list">
+        <div id="error"></div>
+          <dic class="todo-item">
+            <label>
+              <input type='checkbox' />
+              <span class="bubble business"></span>
+            </label>
+            <div class="todo-content">
+              <input class="input-item" type="text" value="12-12-2022" readonly />
+              <input class="input-item" type="text" value="Shopping" readonly />
+              <input class="desc-item" type="text" value="make a video jaassd asjkdjka Fadi wassim Julia Jessica mama baba anna " readonly />
+            </div>
+            <div class="actions">
+              <button class="edit"> Edit </button>
+              <button class="delete"> Delete </button>
+            </div>
+          </div>
+        </div>
+		</section>
 `;
   return element;
 };
