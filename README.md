@@ -4,33 +4,37 @@
 
 This app help you organizing your work schedule.</br>
 
-1- What are you going to do.</br>
-2- when you have to do it.</br>
-3- short description about what you should do.</br>
-4- Able to use check mark when you start it and deleting it when it's done.
+1- Register your name.</br>
+2- What are you going to do.</br>
+3- when you have to do it.</br>
+4- short description about what you should do.</br>
+5- Store your todo by category.</br>
+6- Able to use check mark when you start it.</br>
+7- You delete todo row or edit it.
 
 ## 2. Link and Preview
 
-![App view](./public/Capture.JPG)
-Project link is available at [ToDo App](https://f-naddaf.github.io/Todo-project)
+![App view](./public/app-screen.JPG)
+Project link is available at [ToDo App](https://fadi-todo-app.netlify.app/)
+The colors are inspired from master and visa card.
 
 ## 3. App Folder Structure
 
 ```text
 public
 └── style.css
-└── Images
-  └── Expense-logo.png
+└── Image
+  └── Todo-logo-1.png
+└── app-screen.jpg
 src
 └── pages
-  └── recipe-page.js
-  └── result-page.js
-  └── search-page.js
+  └── togo-page.js
+  └── welcome-page.js
 └── views
-  └── init-view.js
-  └── recipe-view.js
-  └── search-view.js
+  └── todo-view.js
+  └── welcome-view.js
 └── app.js
+└── constants.js
 index.html
 README.md
 ```
