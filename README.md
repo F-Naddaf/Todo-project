@@ -14,7 +14,7 @@ This app help you organizing your work schedule.</br>
 
 ## 2. Link and Preview
 
-![App view](./public/app-screen.JPG)
+![App view](./public/app-screen.jpg)
 Project link is available at [ToDo App](https://fadi-todo-app.netlify.app/)
 The colors are inspired from master and visa card.
 
