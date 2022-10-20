@@ -42,9 +42,9 @@ README.md
 ## The app must have
 
 - [x] Todo logo.
-- [ ] User can search for the payment entity.
-- [ ] User can adding a new payment entity to his list.
-- [ ] User can edit and delete a payment row from his list.
-- [ ] User can check the total of all his expense.
-- [ ] The background will change if the validity date of the payment = or > than 3 days.
-- [ ] Making the app interact with a different devices.
+- [x] User can add his name.
+- [x] User can adding a new todo entity to his list.
+- [x] User can edit and delete todo row from his list.
+- [x] User can mark the row as pending.
+- [x] User can store his todo entity as Business or Personal
+- [x] User todo list should not disappear when he refresh the page.
